@@ -1,40 +1,15 @@
 
-var accountA = {
-    name : "Alev Pekkaya",
-    accountNu : 12345678,
-    balance : 2000,
-    addAccount : 1000,
-}
-var accountB = {
-    name : "Kerem Pekkaya",
-    accountNu : 12345678,
-    balance : 3000,
-    addAccount : 2000,
-}
+// ----- PROMISE -------
 
-function withdrawMoney(account, quantity){
-    console.log(`Hello ! ${account.name}`)
+let check =true
 
-    if (account.balance >= quantity) {
-        console.log('You can withdraw your money')
-    } else {
-        var total = account.balance + account.addAccount;
-        if (total >= quantity) {
-            if (confirm('Would you like to use Additional Account ?'))
-            {console.log('You can receive your money !')}
-        } else {
-            console.log(`In your account(${account.accountNu}) \n There is no ${quantity}`);
-        } else {
-            console.log('Sorry Your balance is not enough ')
-        }
-    } 
-    
-}
+const promise1 = new Promise((resolve, reject) => {
+    if(check){
+        resolve("Promise is Succesful")
+    }else {
+        reject("Promise is Unsuccesful")
+    }
+})
 
 
-withdrawMoney(accountA, 2500)
-withdrawMoney(accountB, 2000)
-
-
-
-
+console.log(promise1)
