@@ -1,28 +1,17 @@
 
-// ----- PROMISE -------
-
-// let check =true
-
-// const promise1 = new Promise((resolve, reject) => {
-//     if(check){
-//         resolve("Promise is Succesful")
-//     }else {
-//         reject("Promise is Unsuccesful")
-//     }
-// })
-
-// console.log(promise1)
-
-let check =false
-
-function createPromise(){
-    return new Promise((resolve, reject) => {
-        if (check) {
-            resolve("Promise running as aimed")
-        } else {reject ("There is big problem")}
-    })
+writeScreen = () => {
+    debugger
+    let a = 1, b =8;
+    a *= 3;
+    b = Math.pow(b,3);
+    console.log("a value", a, "value b :", b) 
 }
-createPromise()
-.then((response)=> console.log(response))
-.catch((error)  => console.log(error))
-.finally(()  => console.log("Always running"))
+
+debugger
+writeScreen()
+
+for (let i=0; i<5; i++ ) {
+    let a=0;
+    a += i;
+    console.log(a)
+}
