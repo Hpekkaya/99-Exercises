@@ -1,18 +1,21 @@
 
-// console.log(window)
-let value
+// Selectors property of style
+// class, id, tag name
+let value;
 
-console.log(document.location)
-
-// value= document.location.href
-// value= document.location.hostname
-// value = document.location.port
-// value = document.location.pathname
-// value = document.characterSet;
-// value=document.title;
-value.document.links(4);
+value =document.getElementById("todoAddButton");
 
 
 
-console.log(value)
+
+
+console.log("Value :",value);
+// console.log("Id  :", value.id);
+// console.log("Attribute :", value.getAttribute("id"));
+// console.log("Class Name :", value.className);
+console.log("Class Name :", value.getAttribute("class"));
+
+value = value.classList[3]
+console.log("Value :",value);
+
 
