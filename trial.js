@@ -11,4 +11,17 @@ value = value.textContent
 console.log("Value :",value);
 console.log("Value :",value.innerHTML);
 
+// Difference Between .innerHTML and textContent
+
+value.textContent = "<b> Add ToDo List </b>"
+// Takes into consideration <b> tag as a string
+
+
+
+value.innerHTML = "<b> Add ToDo List </b>"
+// Takes into consideration <b> tag as a HTML tag
+
+
+
+
 
