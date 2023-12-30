@@ -3,23 +3,19 @@
 // class, id, tag name
 let value;
 
-value =document.getElementById("todoAddButton");
-console.log("Value :",value);
+value =document.getElementsByClassName("list-group-item");
+const arrayValue = Array.from(value)
 
-
-value = value.textContent
-console.log("Value :",value);
-console.log("Value :",value.innerHTML);
-
-// Difference Between .innerHTML and textContent
-
-value.textContent = "<b> Add ToDo List </b>"
-// Takes into consideration <b> tag as a string
+arrayValue.forEach(function(toDo1, index){
+    console.log(index+1, ". Class ",toDo1.className)
+    console.log(toDo1.textContent)
+})
+console.log("Classes :",arrayValue);
 
 
 
-value.innerHTML = "<b> Add ToDo List </b>"
-// Takes into consideration <b> tag as a HTML tag
+
+
 
 
 
